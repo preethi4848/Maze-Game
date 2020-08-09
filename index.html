@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>MAZE GAME</title>
+	<link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+	<style> body { margin: 0; background: #2B2E31 url(img/screen-bg.png) repeat; } </style>
+	<script src="src/phaser-arcade-physics.2.2.2.min.js"></script>
+	<script src="src/Boot.js"></script>
+	<script src="src/Preloader.js"></script>
+	<script src="src/MainMenu.js"></script>
+	<script src="src/Howto.js"></script>
+	<script src="src/Game.js"></script>
+</head>
+<body>
+<script>
+(function() {
+	var game = new Phaser.Game(315, 480, Phaser.CANVAS, 'game');
+	game.state.add('Boot', Ball.Boot);
+	game.state.add('Preloader', Ball.Preloader);
+	game.state.add('MainMenu', Ball.MainMenu);
+	game.state.add('Howto', Ball.Howto);
+	game.state.add('Game', Ball.Game);
+	game.state.start('Boot');
+})();
+</script>
+
+<marquee><b style="color: yellow;">BY&#127894;&#65039;PREETHI G</b></marquee>
+	<marquee><i style="color: white;">Maze Game LIve Demo&#x1F525; Maze Game project is developed using HTML5, CSS, and JavaScript. Here the player has to escape from maze within given time; that is 30 seconds, movements are done using Keyboard controls ( Arrow Keys or W, A, S, D Keys for movement ). Each level has different mazes which are generated randomly. Now talking about the environment, the game design is set on Canvas. During the gameplay, whenever a player moves from one place to another there are hover colors left as footprints and each movement is counted. The player can move as many as he/she want but within a short period of time.</i></marquee>
+
+
+</body>
+</html>
